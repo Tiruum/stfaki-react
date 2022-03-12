@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import GoogleLogin from 'react-google-login'
 import './login-form.css';
 import LoginHeader from '../login-header/login-header'
@@ -37,7 +38,7 @@ export default class LoginForm extends Component {
                                 </div>
                             </div>
                             <div className="d-flex flex-column">
-                                <button onClick={this.onSubmitClick} type="button" className="btn btn-primary position-relative text-capitalize p-2 m-0 mb-2 btn-sm container-fluid waves-effect">Войти</button>
+                                <Link to={'/'}><button onClick={this.onSubmitClick} type="button" className="btn btn-primary position-relative text-capitalize p-2 m-0 mb-2 btn-sm container-fluid waves-effect">Войти</button></Link>
                                 <GoogleLogin
                                     clientId='744713136880-p4eq0bblccrntia52ge51kescquir0li.apps.googleusercontent.com'
                                     buttonText='Войти через Google'

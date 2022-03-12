@@ -57,3 +57,13 @@ div[data-src="common"].cover {
 .border-primary {
     border-color: #0160A2 !important;
 }
+
+#main-wrapper {
+    max-width: 75%;
+}
+
+@media (max-width: 700px) {
+    #main-wrapper {
+        max-width: 100%;
+    }
+}
