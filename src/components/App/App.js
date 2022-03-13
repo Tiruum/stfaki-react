@@ -40,8 +40,8 @@ export default class App extends Component {
   render() {
     return (
       <Routes>
-        <Route path='/' element={<React.Fragment><Sidebar data={this.state}/><Main /></React.Fragment>} />
-        <Route path='/login' element={<React.Fragment><Sidebar data={this.state}/><LoginForm onSubmitted={this.onSubmitted}/></React.Fragment>} />
+        <Route path='/' exact={true} element={<React.Fragment><Sidebar data={this.state}/><Main /></React.Fragment>} />
+        <Route path='/login/' element={<React.Fragment><Sidebar data={this.state}/><LoginForm onSubmitted={this.onSubmitted}/></React.Fragment>} />
       </Routes>
     )
   }

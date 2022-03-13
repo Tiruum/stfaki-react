@@ -12,12 +12,16 @@ a, a:hover, a:focus {
     color: #000;
     z-index: 999;
     transition: all 0.3s;
-    overflow-y: hidden;
+    overflow-y: auto;
     background: rgba( 255, 255, 255, .98 );
     /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 0em 1em 1em 0em;
+}
+
+#sidebar-item-list {
+    overflow-y: scroll;
 }
 
 #sidebar.active {

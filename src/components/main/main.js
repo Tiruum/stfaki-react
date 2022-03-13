@@ -7,7 +7,7 @@ import DasrLogo from './dasrLogo.svg'
 const Main = () => {
     return (
         <React.Fragment>
-        <div className="container-fluid w-75 text-white">
+        <div className="container-fluid text-white" id="main-wrapper">
             <section className="vh-100 position-relative">
                 <div className="row d-flex justify-content-between d-inline-block position-absolute top-50 start-0 translate-middle-y">
                     <div className="col-lg-12 d-lg-block d-md-block d-sm-block d-block my-auto">
@@ -34,7 +34,7 @@ const Main = () => {
                                 <div className="col-md-8">
                                     <div className="card-body">
                                         <h5 className="card-title fw-400">Стиральная комната</h5>
-                                        <p className="card-text fw-300">Можно выбрать дату и время для записи в шесть стиральных машин.</p>
+                                        <p className="card-text fw-300">Можно выбрать дату и время для записи в шесть стиральных и одну сушильную машины.</p>
                                         <button className="btn btn-primary btn-sm text-capitalize p-2 ps-4 pe-4">Записаться</button>
                                     </div>
                                 </div>
